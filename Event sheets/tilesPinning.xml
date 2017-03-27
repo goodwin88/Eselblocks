@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>tilesPinning</name>
+    <events>
+        <include>uiBars</include>
+        <event-block sid="2685070578298171">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="8521099963667024" type="tileBlank" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7335100860201851" type="tileBlank" />
+            </actions>
+        </event-block>
+        <event-block sid="743677237119581">
+            <conditions>
+                <condition behavior="warpObjPin" id="0" name="Is pinned" sid="606822248652914" type="warpObj" />
+                <condition id="-11" name="For Each" sid="607373549588935" type="System">
+                    <param id="0" name="Object">warpObj</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="revealedNPCPin" id="1" name="Unpin" sid="941465558887580" type="revealedNPC" />
+                <action behavior="revealedObjPin" id="1" name="Unpin" sid="228866731284132" type="revealedObj" />
+                <action behavior="placedObjPin" id="1" name="Unpin" sid="724945482890685" type="placedObj" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

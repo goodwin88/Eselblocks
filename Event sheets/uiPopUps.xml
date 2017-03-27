@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>uiPopUps</name>
+    <events>
+        <event-block sid="846848393796230">
+            <conditions>
+                <condition id="-18" name="On created" sid="463005054899051" type="bullet02Orange" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="115822966538449" type="bullet02Orange">
+                    <param id="0" name="Object">invisStatusPopUp</param>
+                    <param id="1" name="Layer">&quot;invis&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="783682849728376" type="invisStatusPopUp">
+                    <param id="0" name="Pin to">bullet02Orange</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="626818868928717">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="726034078173042" type="invisStatusPopUp" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="331152692052948" type="invisStatusPopUp" />
+            </actions>
+        </event-block>
+        <event-block sid="440401791300081">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="712941761723160" type="bullet02Orange">
+                    <param id="0" name="Object">revealedObj</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="645197303691424" type="invisStatusPopUp">
+                    <param id="0" name="Object">textPopUp</param>
+                    <param id="1" name="Layer">&quot;text&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="476890439764174" type="textPopUp">
+                    <param id="0" name="Color">rgb(0,153, 255)</param>
+                </action>
+                <action id="0" name="Set text" sid="239373799482752" type="textPopUp">
+                    <param id="0" name="Text">&quot;+5&quot;</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="985608890166807" type="textPopUp">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="284744372662462" type="textPopUp">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="672748998410235" type="textPopUp" />
+            </actions>
+        </event-block>
+        <event-block sid="281798505725908">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="201109562872813" type="bullet02Orange">
+                    <param id="0" name="Object">tileRock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="799825836216652" type="invisStatusPopUp">
+                    <param id="0" name="Object">textPopUp</param>
+                    <param id="1" name="Layer">&quot;text&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="232857230324214" type="textPopUp">
+                    <param id="0" name="Color">rgb(255,51, 0)</param>
+                </action>
+                <action id="0" name="Set text" sid="707464624737806" type="textPopUp">
+                    <param id="0" name="Text">&quot;-15&quot;</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="520708124915423" type="textPopUp">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="176931890432121" type="textPopUp">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="596106486560361" type="textPopUp" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

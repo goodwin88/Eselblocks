@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanicFallingBlocks</name>
+    <events>
+        <event-block sid="241915138432096">
+            <conditions>
+                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="903698591978625" type="invisDropMeter" />
+                <condition id="-4" name="Trigger once while true" sid="962586465589519" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="920541118624795" type="invisDropMeter" />
+            </actions>
+        </event-block>
+        <event-block sid="483064545619426">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="787272327244962" type="tileRock" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="271467568855648">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="458771058411954" type="tileRock">
+                            <param id="0" name="Object">revealedObj</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="655111677502699" type="tileRock">
+                            <param id="0" name="Object">revealedNPC</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="788181684185001" type="tileRock" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="439383566975538">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="883488422462353" type="tileRock" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="860764506940517">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="960837456425129" type="tileRock">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="161843932323855" type="tileRock">
+                            <param id="0" name="Object">primBlock</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="380832809228866" type="tileRock">
+                            <param id="0" name="Instance variable">doomed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="850296558059277" type="tileRock">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="820031122816151" type="tileRock">
+                            <param id="0" name="Instance variable">doomed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="226072861458235" type="tileRock">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="560427688784588" type="tileRock">
+                            <param id="0" name="Object">invisDropMeter</param>
+                            <param id="1" name="Layer">&quot;invis&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="106785944420184" type="invisDropMeter">
+                            <param id="0" name="Pin to">tileRock</param>
+                            <param id="1" name="Mode">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971093511882693">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="121807510652247" type="tileRock">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="141130558398647" type="tileRock">
+                            <param id="0" name="Object">invisDropMeter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="608821226799265" type="invisDropMeter" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="755677134840138" type="tileRock" />
+                    </actions>
+                </event-block>
+                <event-block sid="383519820713791">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="103636218092841" type="tileRock">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="631299509631271" type="tileRock">
+                            <param id="0" name="Object">bullet01Purple</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="233344768125929" type="tileRock" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="876390940454468">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="963724193046144" type="tileRock" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="577999973025402" type="tileRock">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="602666343531680" type="tileRock">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
