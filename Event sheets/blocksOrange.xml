@@ -83,10 +83,16 @@
                         <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="464685525390315" type="tile02Orange">
                             <param id="0" name="Object">tileTarget</param>
                         </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="772358253778439" type="tile02Orange">
+                            <param id="0" name="Object">tileBlank</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="570219555347233" type="tileTarget">
                             <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="104823134183346" type="tileBlank">
+                            <param id="0" name="Frame number">2</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -107,12 +113,12 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="666768099197997">
+                        <event-block sid="666768099197997">
                             <conditions>
                                 <condition id="1" inverted="1" name="Is overlapping another object" sid="715113777751300" type="tileTarget">
                                     <param id="0" name="Object">placedObj</param>
                                 </condition>
-                                <condition id="3" name="Compare frame" sid="559578561089507" type="tileTarget">
+                                <condition disabled="1" id="3" name="Compare frame" sid="559578561089507" type="tileTarget">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Number">0</param>
                                 </condition>
@@ -356,7 +362,11 @@
             <conditions>
                 <condition id="2" inverted="1" name="Is in touch" sid="376758960985726" type="Touch" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set frame" sid="680355753977354" type="tileBlank">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="420803652743570">
                     <conditions>

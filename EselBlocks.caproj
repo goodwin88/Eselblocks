@@ -93,8 +93,20 @@
                 <type>tileBlank</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7555585762987029" speed="0">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7555585762987029" speed="0">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.5125" original-source="C:\Users\Chris\Desktop\New folder\RockGame\Rocks\rock01.png">
+                        <collision-poly>
+                            <point x="0.0208518" y="0.0206253" />
+                            <point x="0.519964" y="0.0206253" />
+                            <point x="0.979148" y="0.0206253" />
+                            <point x="0.979148" y="0.480026" />
+                            <point x="0.969166" y="0.979375" />
+                            <point x="0.539929" y="0.979375" />
+                            <point x="0.0208518" y="0.979375" />
+                            <point x="0.0208518" y="0.430091" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.5125">
                         <collision-poly>
                             <point x="0.0208518" y="0.0206253" />
                             <point x="0.519964" y="0.0206253" />
