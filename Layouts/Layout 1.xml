@@ -410,39 +410,11 @@
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Flash2" />
                         <behavior-instance type="warpObjPin" />
-                        <behavior-instance type="Flash" />
                         <behavior-instance type="LineOfSight">
                             <properties>
                                 <obstacles>Custom</obstacles>
-                                <range>600</range>
+                                <range>150</range>
                                 <cone-of-view>360</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>85</cell-size>
-                                <cell-border>3</cell-border>
-                                <obstacles>Custom</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Disabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Turret">
-                            <properties>
-                                <range>300</range>
-                                <rate-of-fire>0.1</rate-of-fire>
-                                <rotate>No</rotate>
-                                <rotate-speed>180</rotate-speed>
-                                <target-mode>Nearest</target-mode>
-                                <predictive-aim>No</predictive-aim>
-                                <projectile-speed>500</projectile-speed>
-                                <initial-state>Enabled</initial-state>
                                 <use-collision-cells>Yes</use-collision-cells>
                             </properties>
                         </behavior-instance>

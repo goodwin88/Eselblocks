@@ -16,14 +16,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="3">spawnTerrain</event-sheet>
         <event-sheet order="4">uiBars</event-sheet>
         <event-sheet order="5">blocksGreen</event-sheet>
-        <event-sheet order="6">blocksPurple</event-sheet>
+        <event-sheet active="1" order="6">blocksPurple</event-sheet>
         <event-sheet order="7">mechanicFallingBlocks</event-sheet>
         <event-sheet order="8">mechanicShaking</event-sheet>
         <event-sheet order="9">debug</event-sheet>
         <event-sheet order="10">typesObj</event-sheet>
         <event-sheet order="11">uiPopUps</event-sheet>
         <event-sheet order="12">blocksOrange</event-sheet>
-        <event-sheet active="1" order="13">mechanicBlackHole</event-sheet>
+        <event-sheet order="13">mechanicBlackHole</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

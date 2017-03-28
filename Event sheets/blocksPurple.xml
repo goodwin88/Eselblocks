@@ -11,12 +11,6 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="537390661541638" type="tile01Purple">
                     <param id="0" name="Instance variable">active</param>
                 </condition>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="679494460414196" type="tile01Purple">
-                    <param id="0" name="Object">warpInvisObj</param>
-                </condition>
-                <condition disabled="1" id="4" inverted="1" name="Is touching object" sid="151520193077747" type="Touch">
-                    <param id="0" name="Object">warpInvisObj</param>
-                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -81,9 +75,6 @@
             <conditions>
                 <condition id="4" name="Is touching object" sid="935021391266576" type="Touch">
                     <param id="0" name="Object">tile01Purple</param>
-                </condition>
-                <condition id="4" inverted="1" name="Is touching object" sid="790071351968293" type="Touch">
-                    <param id="0" name="Object">warpInvisObj</param>
                 </condition>
                 <condition id="-8" name="Is boolean instance variable set" sid="400958134323873" type="tile01Purple">
                     <param id="0" name="Instance variable">active</param>
