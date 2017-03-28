@@ -140,6 +140,9 @@
                 <behavior-type name="Solid" sid="750182778477752">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="DestroyOutsideLayout2" sid="219697611156026">
+                    <behavior id="destroy" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3903105665273141" speed="5">
@@ -562,14 +565,10 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="1" y="0.5" />
-                        <image-point name="Imagepoint 2" x="1" y="1" />
-                        <image-point name="Imagepoint 3" x="0.5" y="1" />
-                        <image-point name="Imagepoint 4" x="0" y="1" />
-                        <image-point name="Imagepoint 5" x="0" y="0.5" />
-                        <image-point name="Imagepoint 6" x="0" y="0" />
-                        <image-point name="Imagepoint 7" x="0.5" y="0" />
-                        <image-point name="Imagepoint 8" x="1" y="0" />
+                        <image-point name="Imagepoint 1" x="1.06667" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0.5" y="1.06667" />
+                        <image-point name="Imagepoint 5" x="-0.0666667" y="0.5" />
+                        <image-point name="Imagepoint 7" x="0.5" y="-0.0666667" />
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.510601" y="0" />
@@ -1453,6 +1452,93 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tile05BlackHole" sid="737875608961088">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="overlapValue" sid="967675732478287" type="number" />
+                <instance-variable name="colorSet" sid="964436817535964" type="boolean" />
+                <instance-variable name="color" sid="133727160627851" type="number" />
+                <instance-variable name="doomed" sid="556041702078428" type="boolean" />
+                <instance-variable name="checkUp" sid="753957843523368" type="boolean" />
+                <instance-variable name="checkDown" sid="947269008566572" type="boolean" />
+                <instance-variable name="checkLeft" sid="313666471853227" type="boolean" />
+                <instance-variable name="checkRight" sid="959262386754675" type="boolean" />
+                <instance-variable name="active" sid="359768040958552" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Rotate" sid="103609562545771">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="396383257069942">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="530760235693086">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441936135964378" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.510601" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.416405" />
+                            <point x="1" y="1" />
+                            <point x="0.53419" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.351648" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tile06Monster" sid="817534484954346">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="overlapValue" sid="363361370461909" type="number" />
+                <instance-variable name="colorSet" sid="776263028839260" type="boolean" />
+                <instance-variable name="color" sid="597503062034198" type="number" />
+                <instance-variable name="doomed" sid="611844697164343" type="boolean" />
+                <instance-variable name="checkUp" sid="992938592068825" type="boolean" />
+                <instance-variable name="checkDown" sid="302190257099188" type="boolean" />
+                <instance-variable name="checkLeft" sid="316900525614309" type="boolean" />
+                <instance-variable name="checkRight" sid="293718318467921" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="981439815321651">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="786420058557303">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="334266706323637">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="816286806475423">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="756152640289074">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790028760100123" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.510601" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.416405" />
+                            <point x="1" y="1" />
+                            <point x="0.53419" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.351648" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="prims" plugin-id="Sprite" sid="4381230277822594">
@@ -1508,7 +1594,7 @@
         </family>
         <family name="revealedNPC" plugin-id="Sprite" sid="547666061390134">
             <members>
-                <member>tile04Egg</member>
+                <member>tile06Monster</member>
             </members>
             <instance-variables>
                 <instance-variable name="overlapScale" sid="937735877684087" type="number" />
@@ -1611,9 +1697,9 @@
         <event-folder name="mechanics">
             <event-sheet>mechanicFallingBlocks.xml</event-sheet>
             <event-sheet>mechanicShaking.xml</event-sheet>
+            <event-sheet>mechanicBlackHole.xml</event-sheet>
         </event-folder>
         <event-folder name="setup">
-            <event-sheet>spawnColors.xml</event-sheet>
             <event-sheet>spawnTerrain.xml</event-sheet>
             <event-sheet>typesObj.xml</event-sheet>
         </event-folder>

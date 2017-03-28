@@ -3,17 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>game</name>
     <events>
+        <include>blocksOrange</include>
+        <include>mechanicBlackHole</include>
         <include>uiPopUps</include>
         <include>typesObj</include>
         <include>debug</include>
         <include>mechanicShaking</include>
         <include>blocksPurple</include>
         <include>blocksGreen</include>
-        <include>blocksOrange</include>
         <include>mechanicFallingBlocks</include>
         <include>spawnTerrain</include>
         <include>tilesPinning</include>
-        <include>spawnColors</include>
         <include>uiBars</include>
         <comment>Update the &apos;IsOnGround&apos; and &apos;IsFalling&apos; flags of all the blocks every tick.</comment>
         <event-block sid="8023646453671544">

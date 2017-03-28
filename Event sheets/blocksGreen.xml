@@ -5,7 +5,7 @@
     <events>
         <event-block sid="222757968196574">
             <conditions>
-                <condition disabled="1" id="4" name="Is touching object" sid="950125922575261" type="Touch">
+                <condition id="4" name="Is touching object" sid="950125922575261" type="Touch">
                     <param id="0" name="Object">tile03Green</param>
                 </condition>
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="399229544210128" type="tile03Green">
@@ -35,32 +35,48 @@
                 <condition id="4" name="Is touching object" sid="837068206788575" type="Touch">
                     <param id="0" name="Object">tile03Green</param>
                 </condition>
-                <condition id="1" name="Is overlapping another object" sid="910965960379501" type="tile03Green">
-                    <param id="0" name="Object">primBlock</param>
+                <condition id="4" inverted="1" name="Is touching object" sid="282222549431702" type="Touch">
+                    <param id="0" name="Object">warpInvisObj</param>
                 </condition>
                 <condition id="-8" name="Is boolean instance variable set" sid="936628160157007" type="tile03Green">
                     <param id="0" name="Instance variable">active</param>
                 </condition>
-                <condition id="4" inverted="1" name="Is touching object" sid="282222549431702" type="Touch">
-                    <param id="0" name="Object">warpInvisObj</param>
-                </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="157221436896582" type="tile03Green" />
-                <action id="0" name="Spawn another object" sid="309903350780137" type="primBlock">
-                    <param id="0" name="Object">corpse</param>
-                    <param id="1" name="Layer">&quot;invis&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-11" name="Add to" sid="201022676756108" type="TextBox">
-                    <param id="0" name="Instance variable">score</param>
-                    <param id="1" name="Value">15</param>
-                </action>
-                <action id="0" name="Set text" sid="288246869512820" type="TextBox">
-                    <param id="0" name="Text">&quot;ROUND: &quot;&amp;TextBox.roundNumber&amp;&quot;  SCORE: &quot;&amp;TextBox.score</param>
-                </action>
-                <action id="-9" name="Destroy" sid="555136912326115" type="primBlock" />
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="547618801843594">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="993855079918037" type="System">
+                            <param id="0" name="Object">tile03Green</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="674295825319610" type="tile03Green">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                        <condition id="-19" name="Pick all" sid="594886446170191" type="System">
+                            <param id="0" name="Object">primBlock</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="910965960379501" type="tile03Green">
+                            <param id="0" name="Object">primBlock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="157221436896582" type="tile03Green" />
+                        <action id="0" name="Spawn another object" sid="309903350780137" type="primBlock">
+                            <param id="0" name="Object">corpse</param>
+                            <param id="1" name="Layer">&quot;invis&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="201022676756108" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                        <action id="0" name="Set text" sid="288246869512820" type="TextBox">
+                            <param id="0" name="Text">&quot;ROUND: &quot;&amp;TextBox.roundNumber&amp;&quot;  SCORE: &quot;&amp;TextBox.score</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="555136912326115" type="primBlock" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="230296386448521">
             <conditions>
@@ -81,7 +97,7 @@
                     <param id="0" name="Width">4</param>
                 </action>
                 <action id="-8" name="Set angle" sid="578775941694678" type="bullet03Green">
-                    <param id="0" name="Angle">45*choose(0,1,2,3,4,5,6,7)</param>
+                    <param id="0" name="Angle">90*choose(1,2,3,4)</param>
                 </action>
             </actions>
         </event-block>
@@ -99,7 +115,7 @@
             <sub-events>
                 <event-block sid="643669450581109">
                     <conditions>
-                        <condition id="-9" name="Is visible" sid="595821335418031" type="bullet03Green" />
+                        <condition disabled="1" id="-9" name="Is visible" sid="595821335418031" type="bullet03Green" />
                         <condition id="1" name="Is overlapping another object" sid="180429765037234" type="tile03Green">
                             <param id="0" name="Object">bullet03Green</param>
                         </condition>
@@ -122,7 +138,11 @@
                     <param id="0" name="Instance variable">active</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-15" name="Set visible" sid="650744198003344" type="bullet03Green">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="738252099395151">
                     <conditions>
@@ -202,11 +222,8 @@
         </event-block>
         <event-block any="1" sid="301101888886786">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="222689866060063" type="bullet03Green">
-                    <param id="0" name="Object">tile04Egg</param>
-                </condition>
-                <condition id="1" name="Is overlapping another object" sid="349031766165651" type="bullet03Green">
-                    <param id="0" name="Object">tile00Ore1</param>
+                <condition id="1" name="Is overlapping another object" sid="712416873255265" type="bullet03Green">
+                    <param id="0" name="Object">revealedObj</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="286380666017687" type="bullet03Green">
                     <param id="0" name="Object">tile02Orange</param>
@@ -220,6 +237,17 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="724435292076727" type="bullet03Green" />
+            </actions>
+        </event-block>
+        <event-block sid="349250802086669">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="227451926522685" type="bullet03Green">
+                    <param id="0" name="Object">tile05BlackHole</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="165342196411217" type="tile05BlackHole" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="860313715569317" type="bullet03Green" />
             </actions>
         </event-block>
         <event-block sid="191806333750620">

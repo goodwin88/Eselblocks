@@ -165,6 +165,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout2" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -526,7 +527,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <overlapScale>0</overlapScale>
                         <type>0</type>
                         <overlapValue>0</overlapValue>
                         <colorSet>false</colorSet>
@@ -538,20 +538,6 @@
                         <checkRight>false</checkRight>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="revealedNPCPin" />
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>6</period>
-                                <period-random>1</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>3</period-offset-random>
-                                <magnitude>5</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="revealedObjPin" />
                         <behavior-instance type="DestroyOutsideLayout" />
                         <behavior-instance type="Fade">
@@ -956,7 +942,7 @@
                                 <active-at-start>Yes</active-at-start>
                                 <fade-in-time>0.01</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>0.4</fade-out-time>
+                                <fade-out-time>1</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -1600,6 +1586,80 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="tile06Monster" uid="49">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <overlapScale>0</overlapScale>
+                        <overlapValue>0</overlapValue>
+                        <colorSet>false</colorSet>
+                        <color>0</color>
+                        <doomed>false</doomed>
+                        <checkUp>false</checkUp>
+                        <checkDown>false</checkDown>
+                        <checkLeft>false</checkLeft>
+                        <checkRight>false</checkRight>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="revealedNPCPin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>300</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-420</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1871,7 +1931,59 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="tile05BlackHole" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <overlapValue>0</overlapValue>
+                        <colorSet>false</colorSet>
+                        <color>0</color>
+                        <doomed>false</doomed>
+                        <checkUp>false</checkUp>
+                        <checkDown>false</checkDown>
+                        <checkLeft>false</checkLeft>
+                        <checkRight>false</checkRight>
+                        <active>false</active>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>-10</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.5</fade-in-time>
+                                <wait-time>1</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-60</x>
+                        <y>80</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="projectiles" sid="990196411171553">

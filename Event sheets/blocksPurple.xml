@@ -77,37 +77,53 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="877454442238438">
+        <event-block sid="148639289509462">
             <conditions>
-                <condition id="3" name="On touched object" sid="847418589052389" type="Touch">
+                <condition id="4" name="Is touching object" sid="935021391266576" type="Touch">
                     <param id="0" name="Object">tile01Purple</param>
                 </condition>
-                <condition id="-8" name="Is boolean instance variable set" sid="133027468239940" type="tile01Purple">
-                    <param id="0" name="Instance variable">active</param>
-                </condition>
-                <condition id="1" name="Is overlapping another object" sid="880956462581487" type="tile01Purple">
-                    <param id="0" name="Object">primBlock</param>
-                </condition>
-                <condition id="4" inverted="1" name="Is touching object" sid="524634468375263" type="Touch">
+                <condition id="4" inverted="1" name="Is touching object" sid="790071351968293" type="Touch">
                     <param id="0" name="Object">warpInvisObj</param>
                 </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="400958134323873" type="tile01Purple">
+                    <param id="0" name="Instance variable">active</param>
+                </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="718830567778477" type="tile01Purple" />
-                <action id="0" name="Spawn another object" sid="504364852791631" type="primBlock">
-                    <param id="0" name="Object">corpse</param>
-                    <param id="1" name="Layer">&quot;invis&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-11" name="Add to" sid="168178389699149" type="TextBox">
-                    <param id="0" name="Instance variable">score</param>
-                    <param id="1" name="Value">15</param>
-                </action>
-                <action id="0" name="Set text" sid="239042027046459" type="TextBox">
-                    <param id="0" name="Text">&quot;ROUND: &quot;&amp;TextBox.roundNumber&amp;&quot;  SCORE: &quot;&amp;TextBox.score</param>
-                </action>
-                <action id="-9" name="Destroy" sid="622035668701552" type="primBlock" />
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="264566334024235">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="133231810933716" type="System">
+                            <param id="0" name="Object">tile01Purple</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="600960456642557" type="tile01Purple">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                        <condition id="-19" name="Pick all" sid="491873650135853" type="System">
+                            <param id="0" name="Object">primBlock</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="771474010390702" type="tile01Purple">
+                            <param id="0" name="Object">primBlock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="951540176377825" type="tile01Purple" />
+                        <action id="0" name="Spawn another object" sid="737324973169118" type="primBlock">
+                            <param id="0" name="Object">corpse</param>
+                            <param id="1" name="Layer">&quot;invis&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="795367243338899" type="TextBox">
+                            <param id="0" name="Instance variable">score</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                        <action id="0" name="Set text" sid="214313133141273" type="TextBox">
+                            <param id="0" name="Text">&quot;ROUND: &quot;&amp;TextBox.roundNumber&amp;&quot;  SCORE: &quot;&amp;TextBox.score</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="125361198071701" type="primBlock" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="169010034375938">
             <conditions>
@@ -134,7 +150,7 @@
                             <param id="0" name="Height">20+random(40)</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="549173946988280" type="bullet01Purple">
-                            <param id="0" name="Opacity">self.Height</param>
+                            <param id="0" name="Opacity">self.Height*100</param>
                         </action>
                     </actions>
                 </event-block>
@@ -217,21 +233,36 @@
                 <condition id="1" name="Is overlapping another object" sid="553766671017051" type="tile04Egg">
                     <param id="0" name="Object">bullet01Purple</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="881319961732239" type="tile04Egg">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">1</param>
-                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Spawn another object" sid="874381955150582" type="tile04Egg">
+                    <param id="0" name="Object">revealedNPC</param>
+                    <param id="1" name="Layer">&quot;tilesBgNPC&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="751420855534363">
+        <event-block any="1" sid="751420855534363">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="317922224177136" type="bullet01Purple">
                     <param id="0" name="Object">invisEdge</param>
                 </condition>
+                <condition id="1" name="Is overlapping another object" sid="367734128815411" type="bullet01Purple">
+                    <param id="0" name="Object">bullet03Green</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="142372242101207" type="bullet01Purple" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="130320906915662">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="396296408473078" type="bullet01Purple">
+                    <param id="0" name="Object">revealedObj</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="407643964158293" type="revealedObj" />
             </actions>
         </event-block>
         <event-block sid="540944475377938">
@@ -259,20 +290,14 @@
                                 <condition id="-9" name="Is visible" sid="592518108874511" type="bullet01Purple" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="767231314166198" type="tile01Purple">
+                                <action id="-13" name="Set boolean" sid="994472523179907" type="tile01Purple">
+                                    <param id="0" name="Instance variable">active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action disabled="1" id="5" name="Set frame" sid="767231314166198" type="tile01Purple">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="140077148561953">
-                                    <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="223806220604088" type="tile01Purple">
-                                            <param id="0" name="Instance variable">active</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>

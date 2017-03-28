@@ -13,17 +13,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Layout 1</layout>
         <event-sheet order="1">game</event-sheet>
         <event-sheet order="2">tilesPinning</event-sheet>
-        <event-sheet order="3">spawnColors</event-sheet>
-        <event-sheet order="4">spawnTerrain</event-sheet>
-        <event-sheet order="5">uiBars</event-sheet>
-        <event-sheet active="1" order="6">blocksGreen</event-sheet>
-        <event-sheet order="7">blocksPurple</event-sheet>
-        <event-sheet order="8">mechanicFallingBlocks</event-sheet>
-        <event-sheet order="9">mechanicShaking</event-sheet>
-        <event-sheet order="10">blocksOrange</event-sheet>
-        <event-sheet order="11">debug</event-sheet>
-        <event-sheet order="12">typesObj</event-sheet>
-        <event-sheet order="13">uiPopUps</event-sheet>
+        <event-sheet order="3">spawnTerrain</event-sheet>
+        <event-sheet order="4">uiBars</event-sheet>
+        <event-sheet order="5">blocksGreen</event-sheet>
+        <event-sheet order="6">blocksPurple</event-sheet>
+        <event-sheet order="7">mechanicFallingBlocks</event-sheet>
+        <event-sheet order="8">mechanicShaking</event-sheet>
+        <event-sheet order="9">debug</event-sheet>
+        <event-sheet order="10">typesObj</event-sheet>
+        <event-sheet order="11">uiPopUps</event-sheet>
+        <event-sheet order="12">blocksOrange</event-sheet>
+        <event-sheet active="1" order="13">mechanicBlackHole</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -32,8 +32,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="prims" />
-        <family expanded="0" name="tileTextures" />
+        <family expanded="1" name="prims" />
+        <family expanded="1" name="tileTextures" />
         <family expanded="1" name="placedObj" />
         <family expanded="1" name="revealedNPC" />
         <family expanded="1" name="projectiles" />
@@ -46,7 +46,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/ui/" />
+        <folder expanded="1" path="event-folder/ui/" />
         <folder expanded="1" path="event-folder/mechanics/" />
         <folder expanded="1" path="event-folder/setup/" />
         <folder expanded="0" path="file-folder/" />
@@ -84,5 +84,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fxObj/" />
         <folder expanded="1" path="animation-folder/tileTarget/" />
         <folder expanded="1" path="animation-folder/invisStatusPopUp/" />
+        <folder expanded="1" path="animation-folder/tile05BlackHole/" />
+        <folder expanded="1" path="animation-folder/tile06Monster/" />
     </folders-expanded>
 </c2uistate>
