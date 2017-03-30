@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1490677268,
+	"version": 1490884713,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -33,9 +33,10 @@
 		"images/bullet02orange-sheet0.png",
 		"images/bullet03green-sheet0.png",
 		"images/invisedge-sheet0.png",
-		"images/particlesrock.png",
 		"images/tilerock-sheet0.png",
-		"images/invisdropmeter-sheet0.png",
+		"images/tilerock-sheet1.png",
+		"images/tilerock-sheet2.png",
+		"images/invisindicatordrop-sheet0.png",
 		"images/warpobject-sheet0.png",
 		"images/invistargetter-sheet0.png",
 		"images/invisswarmtarget-sheet0.png",
@@ -49,6 +50,9 @@
 		"images/tiletarget-sheet1.png",
 		"images/tiletarget-sheet2.png",
 		"images/invisstatuspopup-sheet0.png",
-		"images/tile05blackhole-sheet0.png"
+		"images/tile05blackhole-sheet0.png",
+		"images/invisindicatordamageprojectile-sheet0.png",
+		"images/invisindicatordamagebomb-sheet0.png",
+		"images/soul-sheet0.png"
 	]
 }
