@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1490884862,
+	"version": 1490929669,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -22,10 +22,11 @@
 		"images/superflash-sheet2.png",
 		"images/tile02orange-sheet0.png",
 		"images/tile02orange-sheet1.png",
+		"images/tile02orange-sheet2.png",
 		"images/tile03green-sheet0.png",
 		"images/tile03green-sheet1.png",
 		"images/tile03green-sheet2.png",
-		"images/tile04egg-sheet0.png",
+		"images/tile04coin-sheet0.png",
 		"images/tile00ore1-sheet0.png",
 		"images/tile00ore1-sheet1.png",
 		"images/barhori-sheet0.png",
@@ -53,6 +54,11 @@
 		"images/tile05blackhole-sheet0.png",
 		"images/invisindicatordamageprojectile-sheet0.png",
 		"images/invisindicatordamagebomb-sheet0.png",
-		"images/soul-sheet0.png"
+		"images/soul-sheet0.png",
+		"images/animationexplosion-sheet0.png",
+		"images/animationexplosion-sheet1.png",
+		"images/grannypurple-sheet0.png",
+		"images/grannyorange-sheet0.png",
+		"images/grannygreen-sheet0.png"
 	]
 }
