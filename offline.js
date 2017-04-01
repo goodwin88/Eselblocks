@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491015490,
+	"version": 1491065435,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -26,7 +26,7 @@
 		"images/tilegreen-sheet0.png",
 		"images/tilegreen-sheet1.png",
 		"images/tilegreen-sheet2.png",
-		"images/tile04coin-sheet0.png",
+		"images/tilecoin-sheet0.png",
 		"images/tile00ore1-sheet0.png",
 		"images/tile00ore1-sheet1.png",
 		"images/barhori-sheet0.png",
@@ -65,6 +65,9 @@
 		"images/grannypositionerorange-sheet0.png",
 		"images/grannypositionerpurple-sheet0.png",
 		"images/cat-sheet0.png",
-		"images/cathinge-sheet0.png"
+		"images/cathinge-sheet0.png",
+		"images/tileswitcherorangegreen-sheet0.png",
+		"images/tileswitchergreenpurple-sheet0.png",
+		"images/tileswitcherpurpleorange-sheet0.png"
 	]
 }
