@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491192117,
+	"version": 1491196366,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -67,6 +67,8 @@
 		"images/tileswitcherorangegreen-sheet0.png",
 		"images/tileswitchergreenpurple-sheet0.png",
 		"images/tileswitcherpurpleorange-sheet0.png",
-		"images/forcefieldgreen-sheet0.png"
+		"images/forcefieldgreen-sheet0.png",
+		"images/uiscenery-sheet0.png",
+		"images/uibox600x90-sheet0.png"
 	]
 }
