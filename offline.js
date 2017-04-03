@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491065435,
+	"version": 1491185224,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -35,8 +35,6 @@
 		"images/bulletgreen-sheet0.png",
 		"images/invisedge-sheet0.png",
 		"images/tilerock-sheet0.png",
-		"images/tilerock-sheet1.png",
-		"images/tilerock-sheet2.png",
 		"images/invisindicatordrop-sheet0.png",
 		"images/warpobject-sheet0.png",
 		"images/invistargetter-sheet0.png",
@@ -68,6 +66,7 @@
 		"images/cathinge-sheet0.png",
 		"images/tileswitcherorangegreen-sheet0.png",
 		"images/tileswitchergreenpurple-sheet0.png",
-		"images/tileswitcherpurpleorange-sheet0.png"
+		"images/tileswitcherpurpleorange-sheet0.png",
+		"images/forcefieldgreen-sheet0.png"
 	]
 }
