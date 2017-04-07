@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491196366,
+	"version": 1491573358,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,7 @@
 		"images/tilepurple-sheet1.png",
 		"images/tilepurple-sheet2.png",
 		"images/sprite2-sheet0.png",
+		"images/corpse-sheet0.png",
 		"images/ghost-sheet0.png",
 		"images/ghost-sheet1.png",
 		"images/screenceiling.png",
@@ -69,6 +70,8 @@
 		"images/tileswitcherpurpleorange-sheet0.png",
 		"images/forcefieldgreen-sheet0.png",
 		"images/uiscenery-sheet0.png",
-		"images/uibox600x90-sheet0.png"
+		"images/uibox600x90-sheet0.png",
+		"images/greenminingbase-sheet0.png",
+		"images/particlesgreen.png"
 	]
 }
