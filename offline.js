@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491573358,
+	"version": 1491684101,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -72,6 +72,8 @@
 		"images/uiscenery-sheet0.png",
 		"images/uibox600x90-sheet0.png",
 		"images/greenminingbase-sheet0.png",
-		"images/particlesgreen.png"
+		"images/particlesgreen.png",
+		"images/dialogueportraitleft-sheet0.png",
+		"images/dialogueportraitright-sheet0.png"
 	]
 }
