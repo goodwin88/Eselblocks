@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1491684352,
+	"version": 1491869566,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -57,8 +57,11 @@
 		"images/animationexplosion-sheet0.png",
 		"images/animationexplosion-sheet1.png",
 		"images/uigrannypurple-sheet0.png",
+		"images/uigrannypurple-sheet1.png",
 		"images/uigrannyorange-sheet0.png",
+		"images/uigrannyorange-sheet1.png",
 		"images/uigrannygreen-sheet0.png",
+		"images/uigrannygreen-sheet1.png",
 		"images/uispinnergrannies-sheet0.png",
 		"images/grannypositionergreen-sheet0.png",
 		"images/grannypositionerorange-sheet0.png",
