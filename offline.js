@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1492201256,
+	"version": 1492452757,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,8 +10,6 @@
 		"images/primblock-sheet0.png",
 		"images/spawner-sheet0.png",
 		"images/tilepurple-sheet0.png",
-		"images/tilepurple-sheet1.png",
-		"images/tilepurple-sheet2.png",
 		"images/sprite2-sheet0.png",
 		"images/corpse-sheet0.png",
 		"images/ghost-sheet0.png",
@@ -22,8 +20,6 @@
 		"images/superflash-sheet1.png",
 		"images/superflash-sheet2.png",
 		"images/tileorange-sheet0.png",
-		"images/tileorange-sheet1.png",
-		"images/tileorange-sheet2.png",
 		"images/tilegreen-sheet0.png",
 		"images/tilegreen-sheet1.png",
 		"images/tilegreen-sheet2.png",
