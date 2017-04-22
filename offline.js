@@ -1,9 +1,10 @@
 ﻿{
-	"version": 1492453445,
+	"version": 1492869969,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
 		"jquery-2.1.1.min.js",
+		"offlineClient.js",
 		"images/screenfloor.png",
 		"images/tileblank-sheet0.png",
 		"images/tileblank-sheet1.png",
