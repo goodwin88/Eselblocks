@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1494943056,
+	"version": 1495779151,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -22,8 +22,6 @@
 		"images/superflash-sheet2.png",
 		"images/tileorange-sheet0.png",
 		"images/tilegreen-sheet0.png",
-		"images/tilegreen-sheet1.png",
-		"images/tilegreen-sheet2.png",
 		"images/tile00ore1-sheet0.png",
 		"images/tile00ore1-sheet1.png",
 		"images/barhori-sheet0.png",
@@ -32,6 +30,7 @@
 		"images/bulletgreen-sheet0.png",
 		"images/invisedge-sheet0.png",
 		"images/tilerock-sheet0.png",
+		"images/tilerock-sheet1.png",
 		"images/invisindicatordrop-sheet0.png",
 		"images/warpobject-sheet0.png",
 		"images/invistargetter-sheet0.png",
@@ -73,6 +72,7 @@
 		"images/dialogueportraitright-sheet0.png",
 		"images/dialoguestate-sheet0.png",
 		"images/uipositioner02pu-sheet0.png",
-		"images/uipositioner03or-sheet0.png"
+		"images/uipositioner03or-sheet0.png",
+		"images/bg-sheet0.png"
 	]
 }
