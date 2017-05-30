@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1496000148,
+	"version": 1496144421,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -73,6 +73,11 @@
 		"images/dialoguestate-sheet0.png",
 		"images/uipositioner02pu-sheet0.png",
 		"images/uipositioner03or-sheet0.png",
-		"images/bg-sheet0.png"
+		"images/bg-sheet0.png",
+		"images/turnillustration-sheet0.png",
+		"images/turnillustration-sheet1.png",
+		"images/turnillustration-sheet2.png",
+		"images/uijumperleft-sheet0.png",
+		"images/uigloom-sheet0.png"
 	]
 }
