@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1496248509,
+	"version": 1497151536,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -11,6 +11,8 @@
 		"images/primblock-sheet0.png",
 		"images/spawner-sheet0.png",
 		"images/tilepurple-sheet0.png",
+		"images/tilepurple-sheet1.png",
+		"images/tilepurple-sheet2.png",
 		"images/sprite2-sheet0.png",
 		"images/corpse-sheet0.png",
 		"images/ghost-sheet0.png",
@@ -21,7 +23,9 @@
 		"images/superflash-sheet1.png",
 		"images/superflash-sheet2.png",
 		"images/tileorange-sheet0.png",
+		"images/tileorange-sheet1.png",
 		"images/tilegreen-sheet0.png",
+		"images/tilegreen-sheet1.png",
 		"images/tile00ore1-sheet0.png",
 		"images/tile00ore1-sheet1.png",
 		"images/barhori-sheet0.png",
@@ -45,7 +49,6 @@
 		"images/tiletarget-sheet1.png",
 		"images/tiletarget-sheet2.png",
 		"images/invisstatuspopup-sheet0.png",
-		"images/tile05blackhole-sheet0.png",
 		"images/tile06monster-sheet0.png",
 		"images/invisindicatordamageprojectile-sheet0.png",
 		"images/invisindicatordamagebomb-sheet0.png",
@@ -60,9 +63,6 @@
 		"images/uipositioner01gr-sheet0.png",
 		"images/uigrannygreencat-sheet0.png",
 		"images/uispinnercat-sheet0.png",
-		"images/tileswitcherorangegreen-sheet0.png",
-		"images/tileswitchergreenpurple-sheet0.png",
-		"images/tileswitcherpurpleorange-sheet0.png",
 		"images/forcefieldgreen-sheet0.png",
 		"images/uiscenery-sheet0.png",
 		"images/uibox600x90-sheet0.png",
@@ -78,6 +78,12 @@
 		"images/turnillustration-sheet1.png",
 		"images/turnillustration-sheet2.png",
 		"images/uijumperleft-sheet0.png",
-		"images/uigloom-sheet0.png"
+		"images/uigloom-sheet0.png",
+		"images/bossredrobo-sheet0.png",
+		"images/bossredrobo-sheet1.png",
+		"images/bulletred-sheet0.png",
+		"images/bulletred-sheet1.png",
+		"images/tilered-sheet0.png",
+		"images/tilered-sheet1.png"
 	]
 }
