@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1497308350,
+	"version": 1497471347,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -34,7 +34,6 @@
 		"images/bulletgreen-sheet0.png",
 		"images/invisedge-sheet0.png",
 		"images/tilerock-sheet0.png",
-		"images/tilerock-sheet1.png",
 		"images/invisindicatordrop-sheet0.png",
 		"images/warpobject-sheet0.png",
 		"images/invistargetter-sheet0.png",
@@ -86,6 +85,15 @@
 		"images/tilered-sheet0.png",
 		"images/tilered-sheet1.png",
 		"images/tilered-sheet2.png",
-		"images/glowred-sheet0.png"
+		"images/glowred-sheet0.png",
+		"images/tileyellow-sheet0.png",
+		"images/tileyellow-sheet1.png",
+		"images/tileyellow-sheet2.png",
+		"images/bossyellowking-sheet0.png",
+		"images/bulletyellow-sheet0.png",
+		"images/bossyellowfailstatetimer-sheet0.png",
+		"images/9patch.png",
+		"images/bosshealthcurrent-sheet0.png",
+		"images/bosshealthmax-sheet0.png"
 	]
 }
