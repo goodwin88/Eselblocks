@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1497471570
+#1497827964
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -86,13 +86,19 @@ images/tilered-sheet1.png
 images/tilered-sheet2.png
 images/glowred-sheet0.png
 images/tileyellow-sheet0.png
-images/tileyellow-sheet1.png
-images/tileyellow-sheet2.png
 images/bossyellowking-sheet0.png
 images/bulletyellow-sheet0.png
 images/bossyellowfailstatetimer-sheet0.png
 images/9patch.png
 images/bosshealthcurrent-sheet0.png
 images/bosshealthmax-sheet0.png
+images/bossbluerival-sheet0.png
+images/tileblue-sheet0.png
+images/tileblue-sheet1.png
+images/tileblue-sheet2.png
+images/bossbluetrack-sheet0.png
+images/bossbluetrack-sheet1.png
+images/bulletblue-sheet0.png
+images/bossbluecheckpoint-sheet0.png
 NETWORK:
 *
