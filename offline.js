@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1497879846,
+	"version": 1498375278,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -98,8 +98,8 @@
 		"images/tileblue-sheet1.png",
 		"images/tileblue-sheet2.png",
 		"images/bossbluetrack-sheet0.png",
-		"images/bossbluetrack-sheet1.png",
 		"images/bulletblue-sheet0.png",
-		"images/bossbluecheckpoint-sheet0.png"
+		"images/bossbluecheckpoint-sheet0.png",
+		"images/bossbluefailstatetimer-sheet0.png"
 	]
 }
